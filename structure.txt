@@ -1,0 +1,51 @@
+kodeforce-portfolio/
+│── public/                     # Static assets (images, resume, icons, etc.)
+│   ├── profile.jpg              # Your profile photo
+│   ├── resume.pdf               # Your resume
+│   └── icons/                   # Any custom icons
+│
+│── src/
+│   ├── app/                     # Next.js App Router pages
+│   │   ├── layout.tsx           # Main layout (Navbar, global styles)
+│   │   ├── globals.css          # Tailwind + global CSS overrides
+│   │   │
+│   │   ├── page.tsx             # Home page (default)
+│   │   ├── catalogue/           # Certifications page
+│   │   │   └── page.tsx
+│   │   ├── gym/                 # Projects page
+│   │   │   └── page.tsx
+│   │   ├── problemset/          # Coding profiles page
+│   │   │   └── page.tsx
+│   │   ├── contests/            # Hackathons page (optional)
+│   │   │   └── page.tsx
+│   │   ├── contact/             # Contact page
+│   │   │   └── page.tsx
+│   │   └── api/                 # (Optional API routes)
+│   │       └── send-email/      # If you ever add a backend mailer
+│   │           └── route.ts
+│   │
+│   ├── components/              # Reusable UI components
+│   │   ├── Navbar.tsx           # Top navigation bar
+│   │   ├── Sidebar.tsx          # Right sidebar with profile + skills
+│   │   ├── ProfileCard.tsx      # Profile info (photo, name, rating, links)
+│   │   ├── SkillBadge.tsx       # Color-coded skill badges
+│   │   ├── RatingGraph.tsx      # Fake rating chart
+│   │   ├── Leaderboard.tsx      # Projects leaderboard
+│   │   ├── RecentActions.tsx    # Feed of recent activity
+│   │   ├── Table.tsx            # Generic table component (used in catalogue/gym/etc.)
+│   │   └── Footer.tsx           # Footer (optional)
+│   │
+│   ├── data/                    # Centralized dummy data (JSON/TS objects)
+│   │   ├── skills.ts            # Skill list + colors
+│   │   ├── projects.ts          # Projects data
+│   │   ├── certifications.ts    # Certifications data
+│   │   ├── codingProfiles.ts    # Links to LeetCode, Codeforces, etc.
+│   │   └── actions.ts           # Recent actions (GitHub commits, certs, etc.)
+│   │
+│   └── styles/                  # Extra custom CSS if needed
+│       └── custom.css
+│
+│── tailwind.config.js           # Tailwind config
+│── postcss.config.js            # PostCSS config
+│── tsconfig.json                # TypeScript config
+│── package.json                 # Dependencies + scripts
